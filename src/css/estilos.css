@@ -1,0 +1,738 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f1f1;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #3883e4;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.logo-image {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #222;
+  border-radius: 8px;
+}
+
+.social-links a:hover {
+  display: inline-block;
+  color: #333;
+  border-radius: 10px;
+}
+
+.whatsapp-icon {
+  width: 35px;
+  height: 38px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Adicionando a animação */
+.whatsapp-icon {
+  animation: alternate-swing 2s infinite ease-in-out;
+}
+
+/* Animação de balanço */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+    /* Inclinação para a direita */
+  }
+
+  50% {
+    transform: rotate(-15deg);
+    /* Inclinação para a esquerda */
+  }
+
+  75% {
+    transform: rotate(10deg);
+    /* Retorna um pouco para a direita */
+  }
+
+  100% {
+    transform: rotate(0deg);
+    /* Retorna à posição original */
+  }
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-icon:hover {
+  transform: scale(1.2) rotate(360deg);
+  /* Rotação completa no hover */
+  transition: transform 0.5s ease-out;
+}
+
+.hero {
+  background-color: #222;
+  color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  height: 100px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-size: 1.6em;
+}
+
+.hero-description {
+  font-size: 1.1em;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.945);
+  background-color: #f5f2f2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 700px;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+  background-color: #d3d3d3;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Container para centralizar a imagem verticalmente */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3983e4;
+  color: #fff;
+  /* Aumentei a opacidade */
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.774);
+  /* Adicionei sombra */
+}
+
+.button:hover {
+  background: rgb(12, 12, 12);
+  transform: translateY(-50%) scale(1.1);
+  /* Efeito de zoom no hover */
+}
+
+.button-left {
+  left: 20px;
+}
+
+.button-right {
+  right: 20px;
+}
+
+.car-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+
+.car-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1px;
+  letter-spacing: 2px;
+  align-items: center;
+  text-align: center;
+}
+
+.car-description {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding: 1px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.car-price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding: 1px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #06c246;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #3584eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+  padding: 10px;
+  background: rgba(244, 245, 243, 0.979);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.932);
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.indicator:hover {
+  transform: scale(1.2);
+}
+
+.indicator.active {
+  background: #3584eb;
+  border-color: #ffffff;
+  transform: scale(1.2);
+}
+
+/* Media Queries ajustadas */
+@media (max-width: 768px) {
+  .carousel-images {
+    height: 500px;
+  }
+
+  .car-info {
+    padding: 20px;
+  }
+
+  .car-title {
+    font-size: 24px;
+  }
+
+  .button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-images {
+    height: 400px;
+  }
+}
+
+/* Animação de fade para as imagens */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.map-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.map-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.address-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.phone-number {
+  font-weight: bold;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+  display: none;
+  transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #3584eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top svg {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  background-color: #3584eb;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding: 1px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-media a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+  margin-right: 10px;
+}
+.social-media a:hover {
+  transform: scale(1.4);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(247, 246, 246, 0.884);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Dispositivos Extra Grandes (TVs, monitores grandes) */
+@media (min-width: 1400px) {
+  .carousel {
+    max-width: 1300px;
+  }
+
+  .carousel-images {
+    height: 800px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  .logo {
+    font-size: 2em;
+  }
+
+  .hero-title {
+    font-size: 2.2em;
+  }
+
+  .hero-description {
+    font-size: 1.3em;
+  }
+}
+
+/* Desktops/Laptops */
+@media (max-width: 1200px) {
+  .carousel {
+    max-width: 1000px;
+  }
+
+  .carousel-images {
+    height: 650px;
+  }
+
+  .map-section {
+    width: 90%;
+  }
+
+  .map-iframe {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+/* Tablets e iPads */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    padding: 15px 5px;
+  }
+
+  .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    margin: 5px 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .carousel {
+    max-width: 90%;
+  }
+
+  .carousel-images {
+    height: 500px;
+  }
+
+  .car-info {
+    padding: 15px;
+  }
+
+  .car-title {
+    font-size: 20px;
+  }
+
+  .car-description {
+    font-size: 16px;
+  }
+
+  .car-price {
+    font-size: 22px;
+  }
+}
+
+/* Tablets menores e dispositivos grandes */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.4em;
+  }
+
+  .carousel-images {
+    height: 400px;
+  }
+
+  .carousel-indicators {
+    bottom: 150px;
+  }
+
+  .button {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .whatsapp-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .map-section {
+    width: 95%;
+    padding: 20px 10px;
+  }
+
+  .footer-content p {
+    font-size: 16px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 5px;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .logo-image {
+    width: 80px;
+  }
+
+  .nav-links a {
+    padding: 6px 12px;
+    font-size: 12px;
+    margin: 3px 5px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 15px 10px;
+  }
+
+  .hero-title {
+    font-size: 1.3em;
+  }
+
+  .hero-description {
+    font-size: 1em;
+  }
+
+  .carousel-images {
+    height: 300px;
+  }
+
+  .carousel-indicators {
+    bottom: 120px;
+  }
+
+  .car-info {
+    padding: 10px;
+  }
+
+  .car-title {
+    font-size: 18px;
+  }
+
+  .car-description {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .car-price {
+    font-size: 20px;
+  }
+
+  .button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .social-media img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 320px) {
+  .carousel-images {
+    height: 250px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .car-info {
+    padding: 8px;
+  }
+
+  .car-title {
+    font-size: 16px;
+  }
+
+  .car-description {
+    font-size: 12px;
+  }
+
+  .car-price {
+    font-size: 18px;
+  }
+
+  .whatsapp-button {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
+
+/* Suporte para orientação paisagem em dispositivos móveis */
+@media (max-height: 500px) and (orientation: landscape) {
+  .carousel-images {
+    height: 280px;
+  }
+
+  .car-info {
+    position: relative;
+  }
+
+  .carousel-indicators {
+    bottom: 100px;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Suporte para dispositivos com tela retina */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .carousel-images img {
+    image-rendering: auto;
+  }
+}

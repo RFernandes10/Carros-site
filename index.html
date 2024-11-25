@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta tags principais para SEO -->
+  <title>Venda de Carros Novos e Usados | Sua Concessionária</title>
+  <meta name="description"
+    content="Encontre os melhores carros novos e usados. Grande variedade de marcas e modelos com os melhores preços e condições de financiamento." />
+  <meta name="keywords"
+    content="venda de carros, carros novos, carros usados, concessionária, financiamento de veículos" />
+
+  <!-- Meta tags Open Graph para compartilhamento em redes sociais -->
+  <meta property="og:title" content="Venda de Carros Novos e Usados | Sua Concessionária" />
+  <meta property="og:description"
+    content="Encontre os melhores carros novos e usados. Grande variedade de marcas e modelos com os melhores preços." />
+  <meta property="og:image" content="https://seusite.com/src/images/og-image.jpg" />
+  <meta property="og:url" content="https://seusite.com" />
+
+  <!-- Meta tags para robots -->
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <!-- Canonical URL para evitar conteúdo duplicado -->
+  <link rel="canonical" href="https://seusite.com" />
+  <!-- Adicione esta meta tag no cabeçalho do seu site -->
+  <meta name="google-site-verification" content="seu-código-de-verificação-aqui" />
+
+  <!-- Mantenha suas meta tags existentes -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<!-- Seus arquivos CSS e favicon -->
+<link rel="stylesheet" href="src/css/estilos.css" />
+<link rel="shortcut icon" href="src/icon/carro-novo.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">Márcio Veículos</div>
+      <div class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#veiculos">Veículos</a>
+        <a href="#map-section" class="scroll-to">Nossa Localização</a>
+      </div>
+      <div class="social-links">
+        <a href="https://wa.me/5521989997460" target="_blank" title="WhatsApp">
+          <img src="src/icon/WhatsApp.png" alt="WhatsApp" class="whatsapp-icon" />
+        </a>
+      </div>
+    </nav>
+    <img src="src/logo/cratão.jpg" alt="car-description" class="logo-image" />
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1 class="hero-title">"Temos o carro que você procura"</h1>
+      <p class="hero-description">
+        "Oferecemos uma seleção exclusiva de veículos"
+      </p>
+    </div>
+  </section>
+  <!--Toyota Corolla-->
+  <div class="carousel" id="veiculos">
+    <div class="carousel-images" id="carouselImages1">
+      <img src="src/img/Toyota_Corolla/Corolla1.jpeg" alt="Toyota Corolla 1" />
+      <img src="src/img/Toyota_Corolla/Corolla2.jpg" alt="Toyota Corolla 2" />
+      <img src="src/img/Toyota_Corolla/Corolla3.jpg" alt="Toyota Corolla 3" />
+      <img src="src/img/Toyota_Corolla/Corolla4.jpg" alt="Toyota Corolla 4" />
+      <img src="src/img/Toyota_Corolla/Corolla5.jpg" alt="Toyota Corolla 5" />
+      <img src="src/img/Toyota_Corolla/Corolla6.jpg" alt="Toyota Corolla 6" />
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators1"></div>
+    <button class="button button-left" onclick="prevSlide(1)">
+      &#10094;
+    </button>
+    <button class="button button-right" onclick="nextSlide(1)">
+      &#10095;
+    </button>
+    <div class="car-info">
+      <h3 class="car-title">Toyota Corolla</h3>
+      <p class="car-description">GLI Automático bancos de couro 2012</p>
+      <div class="car-price">R$ 50.900</div>
+      <a class="whatsapp-button"
+        href="https://wa.me/5521989997460?text=Olá,%20estou%20interessado%20no%20Toyota%20Corolla!"
+        target="_blank">Chamar no WhatsApp</a>
+    </div>
+  </div>
+  <!--Toyota Etios-->
+  <div class="carousel" id="carousel2">
+    <div class="carousel-images" id="carouselImages2">
+      <img src="src/img/Toyota_Etios/Toyota_Etios1.jpg" alt="Toyota Etios" width="600" height="400" />
+      <img src="src/img/Toyota_Etios/Toyota_Etios2.jpg" alt="Toyota Etios0" width="600" height="400" />
+      <img src="src/img/Toyota_Etios/Toyota_Etios3.jpg" alt="Toyota Etios1" width="600" height="400" />
+      <img src="src/img/Toyota_Etios/Toyota_Etios4.jpg" alt="Toyota Etios2" width="600" height="400" />
+      <img src="src/img/Toyota_Etios/Toyota_Etios5.jpg" alt="Toyota Etios3" width="600" height="400" />
+      <img src="src/img/Toyota_Etios/Toyota_Etios6.jpg" alt="Toyota Etios4" width="600" height="400" />
+      <img src="src/img/Toyota_Etios/Toyota_Etios7.jpg" alt="Toyota Etios5" width="600" height="400" />
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators2"></div>
+    <button class="button button-left" onclick="prevSlide(2)">
+      &#10094;
+    </button>
+    <button class="button button-right" onclick="nextSlide(2)">
+      &#10095;
+    </button>
+    <div class="car-info">
+      <h3 class="car-title">Toyota Etios</h3>
+      <p class="car-description">2016 motor 1.5 completo com GNV</p>
+      <div class="car-price">R$ 40.900</div>
+      <a class="whatsapp-button" href="https://wa.me/5521989997460?text=Olá,%20estou%20interessado%20no%20SUV%20Azul!"
+        target="_blank">Chamar no WhatsApp</a>
+    </div>
+  </div>
+  <!--Ford Fiesta-->
+  <div class="carousel" id="carousel3">
+    <div class="carousel-images" id="carouselImages3">
+      <img src="src/img/Ford_fiesta/Ford_fiesta2.jpg" alt="Ford Fiesta" width="600" height="400" />
+      <img src="src/img/Ford_fiesta/Ford_fiesta1.jpg" alt="Ford Fiesta0" width="600" height="400" />
+      <img src="src/img/Ford_fiesta/Ford_fiesta3.jpg" alt="Ford Fiesta1" width="600" height="400" />
+      <img src="src/img/Ford_fiesta/Ford_fiesta4.jpg" alt="Ford Fiesta2" width="600" height="400" />
+      <img src="src/img/Ford_fiesta/Ford_fiesta5.jpg" alt="Ford Fiesta3" width="600" height="400" />
+      <img src="src/img/Ford_fiesta/Ford_fiesta6.jpg" alt="Ford Fiesta4" width="600" height="400" />
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators3"></div>
+    <button class="button button-left" onclick="prevSlide(3)">
+      &#10094;
+    </button>
+    <button class="button button-right" onclick="nextSlide(3)">
+      &#10095;
+    </button>
+    <div class="car-info">
+      <h3 class="car-title">Ford Fiesta</h3>
+      <p class="car-description">2005 motor 1.0 Com ar condicionado</p>
+      <div class="car-price">R$ 15.900</div>
+      <a class="whatsapp-button"
+        href="https://wa.me/5521989997460?text=Olá,%20estou%20interessado%20no%20Sedan%20Preto!" target="_blank">Chamar
+        no WhatsApp</a>
+    </div>
+  </div>
+  <!--Fox-->
+  <div class="carousel" id="carousel4">
+    <div class="carousel-images" id="carouselImages4">
+      <img src="src/img/Fox_2008/fox1.jpg" alt="Fox 2008" width="600" height="400" />
+      <img src="src/img/Fox_2008/fox2.jpg" alt="Fox 20081" width="600" height="400" />
+      <img src="src/img/Fox_2008/fox3.jpg" alt="Fox 20082" width="600" height="400" />
+      <img src="src/img/Fox_2008/fox4.jpg" alt="Fox 20083" width="600" height="400" />
+      <img src="src/img/Fox_2008/fox5.jpg" alt="Fox 20084" width="600" height="400" />
+      <img src="src/img/Fox_2008/fox6.jpg" alt="Fox 20085" width="600" height="400" />
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators4"></div>
+    <button class="button button-left" onclick="prevSlide(4)">
+      &#10094;
+    </button>
+    <button class="button button-right" onclick="nextSlide(4)">
+      &#10095;
+    </button>
+    <div class="car-info">
+      <h3 class="car-title">Fox</h3>
+      <p class="car-description">2008 Completo Motor 1.0</p>
+      <div class="car-price">R$ 18.900</div>
+      <a class="whatsapp-button"
+        href="https://wa.me/5521989997460?text=Olá,%20estou%20interessado%20no%20Coupê%20Branco!" target="_blank">Chamar
+        no WhatsApp</a>
+    </div>
+  </div>
+  <!--Fiat Palio-->
+  <div class="carousel" id="carousel5">
+    <div class="carousel-images" id="carouselImages5">
+      <img src="src/img/Fiat_Palio/Fiat_Palio1.jpg" alt="Fiat Palio" width="600" height="400" />
+      <img src="src/img/Fiat_Palio/Fiat_Palio2.jpg" alt="Fiat Palio0" width="600" height="400" />
+      <img src="src/img/Fiat_Palio/Fiat_Palio3.jpg" alt="Fiat Palio1" width="600" height="400" />
+      <img src="src/img/Fiat_Palio/Fiat_Palio4.jpg" alt="Fiat Palio2" width="600" height="400" />
+      <img src="src/img/Fiat_Palio/Fiat_Palio5.jpg" alt="Fiat Palio3" width="600" height="400" />
+      <img src="src/img/Fiat_Palio/Fiat_Palio6.jpg" alt="Fiat Palio4" width="600" height="400" />
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators5"></div>
+    <button class="button button-left" onclick="prevSlide(5)">
+      &#10094;
+    </button>
+    <button class="button button-right" onclick="nextSlide(5)">
+      &#10095;
+    </button>
+    <div class="car-info">
+      <h3 class="car-title">Fiat Palio</h3>
+      <p class="car-description">2011 Completa com GNV Motor 1.4</p>
+      <div class="car-price">R$ 26.900</div>
+      <a class="whatsapp-button"
+        href="https://wa.me/5521989997460?text=Olá,%20estou%20interessado%20no%20Hatchback%20Amarelo!"
+        target="_blank">Chamar no WhatsApp</a>
+    </div>
+  </div>
+  <!--Polo-->
+  <div class="carousel" id="carousel6">
+    <div class="carousel-images" id="carouselImages6">
+      <img src="src/img/Polo_2003/polo1_.jpg" alt="Crossover verde em uma trilha" width="600" height="400" />
+      <img src="src/img/Polo_2003/polo2_.jpg" alt="Crossover verde em paisagem natural" width="600" height="400" />
+      <img src="src/img/Polo_2003/polo3_.jpg" alt="Crossover verde em uma trilha" width="600" height="400" />
+      <img src="src/img/Polo_2003/polo4_.jpg" alt="Crossover verde em paisagem natural" width="600" height="400" />
+      <img src="src/img/Polo_2003/polo5_.jpg" alt="Crossover verde em uma trilha" width="600" height="400" />
+      <img src="src/img/Polo_2003/polo6_.jpg" alt="Crossover verde em paisagem natural" width="600" height="400" />
+      <img src="src/img/Polo_2003/polo7_.jpg" alt="Crossover verde em uma trilha" width="600" height="400" />
+      <img src="src/img/Polo_2003/polo8_.jpg" alt="Crossover verde em paisagem natural" width="600" height="400" />
+      <img src="src/img/Polo_2003/polo9_.jpg" alt="Crossover verde em uma trilha" width="600" height="400" />
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators6"></div>
+    <button class="button button-left" onclick="prevSlide(6)">
+      &#10094;
+    </button>
+    <button class="button button-right" onclick="nextSlide(6)">
+      &#10095;
+    </button>
+    <div class="car-info">
+      <h3 class="car-title">Polo</h3>
+      <p class="car-description">
+        2003 Completo com GNV Motor 1.6 Manual chave reserva
+      </p>
+      <div class="car-price">R$ 20.900</div>
+      <a class="whatsapp-button"
+        href="https://wa.me/5521989997460?text=Olá,%20estou%20interessado%20no%20Crossover%20Verde!"
+        target="_blank">Chamar no WhatsApp</a>
+    </div>
+  </div>
+  <!--Fox 2013-->
+  <div class="carousel" id="carousel7">
+    <div class="carousel-images" id="carouselImages7">
+      <img src="src/img/Fox_2013/Fox2013_1.jpg" alt="Fox 2013" width="600" height="400" />
+      <img src="src/img/Fox_2013/Fox2013_2.jpg" alt="Fox 20130" width="600" height="400" />
+      <img src="src/img/Fox_2013/Fox2013_3.jpg" alt="Fox 20131" width="600" height="400" />
+      <img src="src/img/Fox_2013/Fox2013_4.jpg" alt="Fox 20132" width="600" height="400" />
+      <img src="src/img/Fox_2013/Fox2013_5.jpg" alt="Fox 20133" width="600" height="400" />
+      <img src="src/img/Fox_2013/Fox2013_6.jpg" alt="Fox 20134" width="600" height="400" />
+      <img src="src/img/Fox_2013/Fox2013_7.jpg" alt="Fox 20135" width="600" height="400" />
+      <img src="src/img/Fox_2013/Fox2013_8.jpg" alt="Fox 20136" width="600" height="400" />
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators7"></div>
+    <button class="button button-left" onclick="prevSlide(7)">
+      &#10094;
+    </button>
+    <button class="button button-right" onclick="nextSlide(7)">
+      &#10095;
+    </button>
+    <div class="car-info">
+      <h3 class="car-title">Fox</h3>
+      <p class="car-description">
+        Completo com GNV Motor 1.0 Com manual chave reserva
+      </p>
+      <div class="car-price">R$ 30.900</div>
+      <a class="whatsapp-button"
+        href="https://wa.me/5521989997460?text=Olá,%20estou%20interessado%20na%20Picape%20Cinza!" target="_blank">Chamar
+        no WhatsApp</a>
+    </div>
+  </div>
+  <!--Prisma 2012-->
+  <div class="carousel" id="carousel8">
+    <div class="carousel-images" id="carouselImages8">
+      <img src="src/img/Prisma_2012/Prisma_20121.jpg" alt="Prisma 2012" width="600" height="400" />
+      <img src="src/img/Prisma_2012/Prisma_20122.jpg" alt="Prisma 20120" width="600" height="400" />
+      <img src="src/img/Prisma_2012/Prisma_20123.jpg" alt="Prisma 20121" width="600" height="400" />
+      <img src="src/img/Prisma_2012/Prisma_20124.jpg" alt="Prisma 20122" width="600" height="400" />
+      <img src="src/img/Prisma_2012/Prisma_20125.jpg" alt="Prisma 20123" width="600" height="400" />
+      <img src="src/img/Prisma_2012/Prisma_20126.jpg" alt="Prisma 20124" width="600" height="400" />
+      <img src="src/img/Prisma_2012/Prisma_20127.jpg" alt="Prisma 20125" width="600" height="400" />
+      <img src="src/img/Prisma_2012/Prisma_20128.jpg" alt="Prisma 20125" width="600" height="400" />
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators8"></div>
+    <button class="button button-left" onclick="prevSlide(8)">
+      &#10094;
+    </button>
+    <button class="button button-right" onclick="nextSlide(8)">
+      &#10095;
+    </button>
+    <div class="car-info">
+      <h3 class="car-title">Prisma</h3>
+      <p class="car-description">2012 Motor 1.4 Completo</p>
+      <div class="car-price">R$ 24.900</div>
+      <a class="whatsapp-button"
+        href="https://wa.me/5521989997460?text=Olá,%20estou%20interessado%20no%20Conversível%20Azul!"
+        target="_blank">Chamar no WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="carousel" id="carousel9">
+    <div class="carousel-images" id="carouselImages9">
+      <img src="src/img/Honda_Fit/Honda_Fit1.jpg" alt="Honda Fit" width="600" height="400" />
+      <img src="src/img/Honda_Fit/Honda_Fit2.jpg" alt="Honda Fit1" width="600" height="400" />
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators9"></div>
+    <button class="button button-left" onclick="prevSlide(9)">
+      &#10094;
+    </button>
+    <button class="button button-right" onclick="nextSlide(9)">
+      &#10095;
+    </button>
+    <div class="car-info">
+      <h3 class="car-title">Honda Fit</h3>
+      <p class="car-description">2010 Completo automático Motor 1.5</p>
+      <div class="car-price">R$ 35.900</div>
+      <a class="whatsapp-button"
+        href="https://wa.me/5521989997460?text=Olá,%20estou%20interessado%20no%20Carro%20Elétrico!"
+        target="_blank">Chamar no WhatsApp</a>
+    </div>
+  </div>
+
+  <section class="map-section" id="map-section">
+    <h2 class="section-title">Nossa Localização</h2>
+    <div class="map-container" style="text-align: center; margin: 20px 0">
+      <iframe class="map-iframe"
+        src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1731414405067!5m2!1spt-BR!2sbr!6m8!1m7!1sV1tozAd1I-s_Mp7o6Hnfrw!2m2!1d-22.86384950522394!2d-43.43493449805306!3f342.52581674509275!4f1.36785208006701!5f0.7820865974627469"
+        width="600" height="450" style="
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+          " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="address-info">
+      <p class="address-title">
+        <strong>Márcio Veículos Concessionária</strong>
+      </p>
+      <p class="address-line">Av. Brasil, 29538 - Realengo</p>
+      <p class="address-line">Rio de Janeiro - RJ, 21720-000</p>
+      <p class="address-line">
+        Tel: <span class="phone-number">(21) 9 8999-7460</span>
+        <img src="src/icon/WhatsApp.png" alt="informação" class="whatsapp-icon" />
+      </p>
+      <span><mark>Pista sentido Campo Grande em frente ao posto Vagão.</mark></span>
+    </div>
+  </section>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z" />
+    </svg>
+  </button>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Márcio Veículos. Todos os direitos reservados.</p>
+      <div class="social-media">
+        <a href="https://wa.me/5521989997460?text=Olá,%20vi%20um%20carro%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais%20detalhes.%20Pode%20me%20ajudar?"
+          target="_blank" aria-label="WhatsApp">
+          <img src="src/icon/WhatsApp.png" alt="WhatsApp" />
+        </a>
+        <a href="https://www.facebook.com/share/14VqVcTfE1/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook">
+          <img src="src/icon/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/mariali_veiculos/profilecard/?igsh=cmp4N212bDhybzhz" target="_blank"
+          aria-label="Instagram">
+          <img src="src/icon/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="src/js/script.js"></script>
+</body>
+
+</html>
